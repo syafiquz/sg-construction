@@ -1,0 +1,42 @@
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("is-active");
+  menu.classList.toggle("menu-active");
+});
+
+window.addEventListener("scroll", () => {
+  hamburger.classList.remove("is-active");
+  menu.classList.remove("menu-active");
+});
+
+const loader = document.querySelector(".loader");
+
+function loaderActive() {
+  loader.classList.add("loader-active");
+}
+
+function loaderActiveTime() {
+  setInterval(loaderActive, 3000);
+}
+
+window.onload = loaderActiveTime();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const langSwitcherButtons = document.querySelectorAll(".lang-switcher");
+
+  langSwitcherButtons.forEach(button => {
+    button.addEventListener("click", (event) => {
+      const lang = event.target.id === "lang-en" ? "en" : "id";
+      switchLanguage(lang);
+    });
+  });
+
+  function switchLanguage(lang) {
+    const elements = document.querySelectorAll("[data-en][data-id]");
+    elements.forEach(el => {
+      el.textContent = el.getAttribute(`data-${lang}`);
+    });
+  }
+});s

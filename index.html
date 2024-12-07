@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo/logo sgconstruction.jpg" type="image/x-icon" />
+
+    <!-- Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Jonsuh Hamburger -->
+    <link rel="stylesheet" href="dist/css/hamburgers.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <title>SG | Construction</title>
+  </head>
+  <body id="home">
+    
+    <!-- Create video -->
+    <section id="video">
+      <div class="overlay"></div>
+          <!-- Ubah link dalam "src" sesuai video yang diinginkan -->
+      <video src="assets/images/SG-CONSTRUCTION.mp4" loop muted autoplay></video>     
+    </section>
+    
+    <!-- Header -->
+    <section class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo-nav">
+            <img src="assets/logo/logo sgconstruction.jpg" width="50px" height="50px" alt="Logo SG Construction">
+          </div>
+          <div class="language-switcher">
+            <button id="lang-en" class="lang-switcher">EN</button>
+            |
+            <button id="lang-id" class="lang-switcher">ID</button>
+           </div>
+          <ul class="menu">
+            <li>
+              <a data-en="Home" data-id="Beranda" href="#home"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a data-en="Best Villa" data-id="Villa Terbaik" href="#our-house"><i class="fa-solid fa-star"></i>Best Villa</a>
+            </li>
+            <li>
+              <a data-en="Services" data-id="Layanan" href="#services"><i class="fa-solid fa-list"></i>Services</a>
+            </li>
+            <li>
+              <a data-en="Gallery" data-id="Galeri" href="#gallery"><i class="fa-solid fa-image"></i>Gallery</a>
+            </li>
+          </ul>
+          <button href="#about" class="about-button" 
+          data-en="About Us" data-id="Tentang Kami">About Us</button>
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+        <div class="hero">
+          <h1 class="animate__animated animate__fadeInUp animate__delay-3s">
+            <span id="t1"></span> <br />
+            <span id="t2"></span>
+          </h1>
+          <div class="hero-jargon">
+            <div class="animate__animated animate__fadeInUp animate__delay-1s">
+              <p data-en="SG Construction Villa construction specialist in Bali. We understand the characteristics of the area and can build villas that suit the surrounding environment." 
+              data-id="SG Construction spesialis konstruksi villa di Bali. Kami memahami karakteristik daerah tersebut dan dapat membangun villa yang sesuai dengan lingkungan sekitar.">
+              <span class="fixed-language">SG Construction</span> Villa construction specialist in Bali. We understand the characteristics of the area and can build villas that suit the surrounding environment.</p>
+            </div>
+            <div class="animate__animated animate__fadeInUp animate__delay-1s">
+              <p data-en="Experts in building villas with style minimalist, classic, tropical We combine natural beauty with the latest architectural design." 
+              data-id="Ahli dalam membangun villa dengan gaya minimalis, klasik, tropis Kami menggabungkan keindahan alam dengan desain arsitektur terkini.">
+              Experts in building villas with style <span class="fixed-language">minimalist, classic, tropical</span> We combine natural beauty with the latest architectural design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header -->
+
+    <!-- Best Destination -->
+    <div class="our-house" id="our-house">
+      <div class="container">
+        <h1 data-en="Most Viewed" data-id="Sering Dilihat" data-aos="fade-up">Most Viewed</h1>
+        <p data-en="Here are some options you can consider, tailored to the design style you most frequently offer."
+        data-id="Berikut beberapa opsi yang bisa Anda pertimbangkan, disesuaikan dengan gaya desain yang paling sering Anda tawarkan." 
+        title="lorem 8" data-aos="fade-up" data-aos-delay="200">Here are some options you can consider, tailored to the design style you most frequently offer.</p>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/house-1.jpg" alt="house-img" />
+              <div class="house-desc">
+                <p data-en="Ujung Berung Street, Bandung City, West Java" data-id="Jalan Ujung Berung, Kota Bandung, Jawa Barat">Ujung Berung Street, Bandung City, West Java</p>
+                <h2 data-en="Villa Name 1" data-id="Nama Villa 1">Villa Name 1</h2>
+                <h4>Rp. 500.000.000</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/house-2.jpg" alt="house-img" />
+              <div class="house-desc">
+                <p data-en="Ujung Berung Street, Bandung City, West Java" data-id="Jalan Ujung Berung, Kota Bandung, Jawa Barat">Ujung Berung Street, Bandung City, West Java</p>
+                <h2 data-en="Villa Name 2" data-id="Nama Villa 2">Villa Name 2</h2>
+                <h4>Rp. 500.000.000</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/house-3.jpg" alt="house-img" />
+              <div class="house-desc">
+                <p data-en="Ujung Berung Street, Bandung City, West Java" data-id="Jalan Ujung Berung, Kota Bandung, Jawa Barat">Ujung Berung Street, Bandung City, West Java</p>
+                <h2 data-en="Villa Name 3" data-id="Nama Villa 3">Villa Name 3</h2>
+                <h4>Rp. 500.000.000</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/house-4.jpg" alt="house-img" />
+              <div class="house-desc">
+                <p data-en="Ujung Berung Street, Bandung City, West Java" data-id="Jalan Ujung Berung, Kota Bandung, Jawa Barat">Ujung Berung Street, Bandung City, West Java</p>
+                <h2 data-en="Villa Name 4" data-id="Nama Villa 4">Villa Name 4</h2>
+                <h4>Rp. 500.000.000</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/house-5.jpg" alt="house-img" />
+              <div class="house-desc">
+                <p data-en="Ujung Berung Street, Bandung City, West Java" data-id="Jalan Ujung Berung, Kota Bandung, Jawa Barat">Ujung Berung Street, Bandung City, West Java</p>
+                <h2 data-en="Villa Name 5" data-id="Nama Villa 5">Villa Name 5</h2>
+                <h4>Rp. 500.000.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Our House -->
+
+    <!-- Best Destination -->
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="services-box">
+          <div class="box">
+            <h1 data-en="Our Services" data-id="Layanan Kami" data-aos="fade-up">Our Services</h1>
+            <p data-en="Here are the services we can provide." 
+            data-id="Berikut ini layanan yang dapat kami berikan." data-aos="fade-up" data-aos-delay="200">
+            Here are the services we can provide.</p>
+          </div>
+          <div class="box">
+            <div class="service" data-aos="fade-down" data-aos-delay="400">
+              <span>1</span>
+              <p data-en="SG Construction is committed to delivering quality craftsmanship, innovative solutions, and client-focused service" 
+              data-id="SG Construction berkomitmen untuk memberikan pengerjaan berkualitas, solusi inovatif, dan layanan yang berfokus pada klien">
+              SG Construction is committed to delivering quality craftsmanship, innovative solutions, and client-focused service.</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-delay="400">
+              <span>2</span>
+              <p data-en="With a proven track record in residential, commercial, and industrial projects, we partner closely with developers to bring ambitious visions to life." 
+              data-id="Dengan rekam jejak yang terbukti dalam proyek perumahan, komersial, dan industri, kami bermitra erat dengan pengembang untuk mewujudkan visi yang ambisius.">
+              With a proven track record in residential, commercial, and industrial projects, we partner closely with developers to bring ambitious visions to life.</p>
+            </div>
+            <div class="service" data-aos="fade-down" data-aos-delay="400">
+              <span>3</span>
+              <p data-en="We pay special attention to finishing details to ensure a perfect end result." 
+              data-id="Kami memberikan perhatian khusus pada detail finishing untuk memastikan hasil akhir yang sempurna.">
+              We pay special attention to finishing details to ensure a perfect end result.</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-delay="400">
+              <span>4</span>
+              <p data-en="We adopt the latest construction technology to improve efficiency and quality." 
+              data-id="Kami mengadopsi teknologi konstruksi terbaru untuk meningkatkan efisiensi dan kualitas.">
+              We adopt the latest construction technology to improve efficiency and quality.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="gallery-box">
+          <div class="box">
+            <h1 data-en="Our Gallery" data-id="Galeri Kami" data-aos="fade-up">Our Gallery</h1>
+            <p data-en="Here are some Villa Design Images" 
+            data-id="Berikut ini beberapa Gambar Desain Villa" data-aos="fade-up" data-aos-delay="200">
+            Here are some Villa Design Images</p>
+          </div>
+          <div class="box">
+            <a href="assets/images/gallery/galeri-1.jpg" target="_blank" data-aos="fade-in" data-aos-delay="400">
+              <img src="assets/images/gallery/galeri-1.jpg" alt="unsplash.com" />
+            </a>
+            <a href="assets/images/gallery/galeri-2.jpg" target="_blank" data-aos="fade-in" data-aos-delay="400">
+              <img src="assets/images/gallery/galeri-2.jpg" alt="unsplash.com" />
+            </a>
+            <a href="assets/images/gallery/galeri-3.jpg" target="_blank" data-aos="fade-in" data-aos-delay="400">
+              <img src="assets/images/gallery/galeri-3.jpg" alt="unsplash.com" />
+            </a>
+            <a href="assets/images/gallery/galeri-4.jpg" target="_blank" data-aos="fade-in" data-aos-delay="400">
+              <img src="assets/images/gallery/galeri-4.jpg" alt="unsplash.com" />
+            </a>
+            <a href="assets/images/gallery/galeri-5.jpg" target="_blank" data-aos="fade-in" data-aos-delay="400">
+              <img src="assets/images/gallery/galeri-5.jpg" alt="unsplash.com" />
+            </a>
+            <a href="assets/images/gallery/galeri-6.jpg" target="_blank" data-aos="fade-in" data-aos-delay="400">
+              <img src="assets/images/gallery/galeri-6.jpg" alt="unsplash.com" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+
+    <!-- About Us -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-box">
+          <div class="box">
+            <h1 data-en="About Us" data-id="Tentang Kami" data-aos="fade-up">About Us</h1>
+            <p data-en="Here is a brief description of SG Construction" 
+            data-id="Berikut ini Deskripsi Singkat SG Construction" data-aos="fade-up" data-aos-delay="200">
+            Here is a brief description of SG Construction</p>
+          </div>
+          <div class="box">
+            <div data-aos="fade-up" data-aos-delay="400">
+              <img src="assets/images/about/about-img.jpg" alt="unsplash.com" />
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400">
+              <h2>SG Construction</h2>
+              <p data-en="SG Construction is a trusted name in developer construction, committed to delivering quality craftmanship, innovative solutions, and client-focused service. With a proven track record in residential, commercial, and industrial projects, we partner closely with developers to bring ambitious visions to life."
+              data-id="SG Construction adalah nama tepercaya dalam konstruksi pengembang, yang berkomitmen untuk memberikan keahlian berkualitas, solusi inovatif, dan layanan yang berfokus pada klien. Dengan rekam jejak yang terbukti dalam proyek perumahan, komersial, dan industri, kami bermitra erat dengan pengembang untuk mewujudkan visi ambisius.">
+              SG Construction is a trusted name in developer construction, committed to delivering quality craftmanship, innovative solutions, and client-focused service. With a proven track record in residential, commercial, and industrial projects, we partner closely with developers to bring ambitious visions to life.</p>
+              <p data-en=" From initial planning to project completion, SG Construction provides end-to-end support, ensuring every build meets the highest standards of safety, efficiency, and sustainability. Driven by integrity and excellence, our team leverages industry expertise and modern technology to deliver projects on time, within budget, and with lasting value for our clients and their communities." 
+              data-id="Dari perencanaan awal hingga penyelesaian proyek, SG Construction menyediakan dukungan menyeluruh, memastikan setiap pembangunan memenuhi standar keselamatan, efisiensi, dan keberlanjutan tertinggi. Didorong oleh integritas dan keunggulan, tim kami memanfaatkan keahlian industri dan teknologi modern untuk menyelesaikan proyek tepat waktu, sesuai anggaran, dan dengan nilai yang berkelanjutan bagi klien kami dan komunitas mereka.">
+              From initial planning to project completion, SG Construction provides end-to-end support, ensuring every build meets the highest standards of safety, efficiency, and sustainability. 
+              Driven by integrity and excellence, our team leverages industry expertise and modern technology to deliver projects on time, within budget, and with lasting value for our clients and their communities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us -->
+
+     <!-- Footer -->
+     <footer>
+      <div class="container">
+        <div class="footer-box">
+          <div class="box">
+            <h2>SG Construction</h2>
+            <p data-en="Build a beautiful future" 
+            data-id="Membangun masa depan yang indah">Build a beautiful future.</p>
+            <div class="footer-icon">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-square-reddit"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="box">
+            <h3 data-en="Menu" data-id="Menu">Menu</h3>
+            <a data-en="Home" data-id="Beranda" href="#home">Home</a>
+            <a data-en="Best Villa" data-id="Villa Terbaik" href="#best">Best Villa</a>
+            <a data-en="About Us" data-id="Tentang Kami" href="#about">About Us</a>
+            <a data-en="Services" data-id="Layanan" href="#services">Services</a>
+            <a data-en="Gallery" data-id="Galeri" href="#gallery">Gallery</a>
+          </div>
+          <div class="box">
+            <h3 data-en="Company" data-id="Perusahaan">Company</h3>
+            <a data-en="Blog" data-id="Blog" href="#">Blog</a>
+            <a data-en="Our Apps" data-id="Aplikasi Kami" href="#">Our Apps</a>
+            <a data-en="Brochure" data-id="Brosur" href="#">Brochure</a>
+          </div>
+          <div class="box">
+            <h3 data-en="Contact Us" data-id="Hubungi Kami">Contact Us</h3>
+            <p><i class="fa-solid fa-envelope"></i> sgconstructionbali@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> (+62)8-7842-9753-84</p>
+            <p><i class="fa-solid fa-location-dot"></i> Jl. I Gusti Ngurah Rai, Kecamatan Mengwi , Kabupaten Badung, Bali 80351</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&copy; Copyright 2024 by <span>SG Construction</span>, All Rights Reserved.</p>
+    </div>
+    <!-- Copyright -->
+
+    <!-- Pre Loader -->
+    <div class="loader">
+      <img src="assets/loader/loader.svg" alt="loading.io" />
+    </div>
+    <!-- Pre Loader -->
+
+    <!-- JS -->
+    <script src="dist/js/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          type: "fraction",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
